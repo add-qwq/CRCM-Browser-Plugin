@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRCM-Browser-Plugin Settings</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 20px;
+            width: 350px;
+            background-color: #f9fafb;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 1.3em;
+            color: #1f2937;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #374151;
+            font-size: 0.9em;
+        }
+
+        select,
+        input[type="checkbox"] {
+            margin-top: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #d1d5db;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: border-color 0.2s;
+        }
+
+        select:focus {
+            border-color: #3b82f6;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+        }
+
+        .option-group {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        button {
+            background-color: #3b82f6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: 500;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+
+        button:active {
+            transform: scale(0.99);
+        }
+
+        .developer-info {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            font-size: 0.85em;
+        }
+
+        .developer-info h2 {
+            font-size: 1em;
+            color: #1f2937;
+            margin-top: 0;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .developer-info p {
+            margin: 8px 0;
+            color: #4b5563;
+        }
+
+        .developer-info a {
+            color: #3b82f6;
+            text-decoration: none;
+            transition: color 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .developer-info a:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+
+        .license {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #f3f4f6;
+            color: #6b7280;
+            font-size: 0.8em;
+        }
+
+        .separator {
+            height: 1px;
+            background-color: #e5e7eb;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CRCM-Browser-Plugin Settings</h1>
+
+    <div class="option-group">
+        <label>
+            Font Awesome Source:
+            <select id="fontAwesomeSource">
+                <option value="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">Global CDN
+                </option>
+                <option value="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">China CDN</option>
+            </select>
+        </label>
+    </div>
+
+    <div class="option-group">
+        <label>
+            <input type="checkbox" id="enableCustomMenu" checked>
+            Enable Custom Context Menu
+        </label>
+    </div>
+
+    <button id="saveSettings">
+        Save Settings
+    </button>
+
+    <div class="separator"></div>
+
+    <div class="developer-info">
+        <h2>Developer Information</h2>
+        <p>
+            Author: add-qwq
+        </p>
+        <p>
+            GitHub: <a href="https://github.com/add-qwq" target="_blank">github.com/add-qwq</a>
+        </p>
+        <p>
+            Website: <a href="https://www.rockaz.top" target="_blank">www.rockaz.top</a>
+        </p>
+        <p>
+            Source Code: <a href="https://github.com/add-qwq/CRCM-Browser-Plugin"
+                target="_blank">CRCM-Browser-Plugin</a>
+        </p>
+        <div class="license">
+            Licensed under Apache-2.0 License. All rights reserved.
+        </div>
+    </div>
+
+    <script src="option.js"></script>
+</body>
+
+</html>

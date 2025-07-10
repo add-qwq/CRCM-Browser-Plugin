@@ -1,0 +1,138 @@
+.crc-custom-menu #custom-menu {
+    display: none;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 0;
+    z-index: 9999;
+    min-width: 180px;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    transform-origin: top left;
+    opacity: 0;
+    transform: scale(0.95);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    user-select: none;
+}
+
+@supports (backdrop-filter: blur(10px)) {
+    .crc-custom-menu #custom-menu {
+        backdrop-filter: blur(10px);
+    }
+}
+
+.crc-custom-menu #custom-menu.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.crc-custom-menu #custom-menu.hiding {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.crc-custom-menu .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #374151;
+}
+
+.crc-custom-menu .menu-item:hover {
+    background-color: #f3f4f6;
+    border-radius: 15px;
+}
+
+.crc-custom-menu .menu-item i {
+    width: 1.5rem;
+    margin-right: 0.75rem;
+    color: #6b7280;
+}
+
+.crc-custom-menu .menu-divider {
+    border-top: 1px solid #e5e7eb;
+    margin: 0.25rem 0;
+}
+
+.crc-custom-menu .menu-header {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media (prefers-color-scheme: dark) {
+    .crc-custom-menu #custom-menu {
+        background: rgba(0, 0, 0, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #fff;
+    }
+
+    .crc-custom-menu .menu-item {
+        color: #fff;
+    }
+
+    .crc-custom-menu .menu-item:hover {
+        background-color: #333;
+    }
+
+    .crc-custom-menu .menu-item i {
+        color: #ccc;
+    }
+
+    .crc-custom-menu .menu-divider {
+        border-top: 1px solid #333;
+    }
+
+    .crc-custom-menu .menu-header {
+        color: #999;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+}
