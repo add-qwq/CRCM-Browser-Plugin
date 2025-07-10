@@ -2,7 +2,7 @@
 
 ## Interface Overview
 ![Preview](https://github.com/add-qwq/CRCM-Browser-Plugin/blob/main/CRCM-Browser-Plugin.png?raw=true)  
-![Preview](https://github.com/add-qwq/CRCM-Browser-Plugin/blob/main/CRCM-Browser-Plugin.png2?raw=true)  
+![Preview](https://github.com/add-qwq/CRCM-Browser-Plugin/blob/main/CRCM-Browser-Plugin2.png?raw=true)  
 
 A browser extension developed based on the [Custom-Right-Click-Menu](https://github.com/add-qwq/Custom-Right-Click-Menu) project, providing a modern, feature-rich alternative to the default right-click menu.  
 
@@ -87,7 +87,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## 界面概览
 ![预览](https://github.com/add-qwq/CRCM-Browser-Plugin/blob/main/CRCM-Browser-Plugin.png?raw=true)  
-![预览](https://github.com/add-qwq/CRCM-Browser-Plugin/blob/main/CRCM-Browser-Plugin.png2?raw=true)  
+![预览](https://github.com/add-qwq/CRCM-Browser-Plugin/blob/main/CRCM-Browser-Plugin2.png?raw=true)  
 
 基于[Custom-Right-Click-Menu](https://github.com/add-qwq/Custom-Right-Click-Menu)项目开发的浏览器扩展，提供现代化、功能丰富的右键菜单替代方案。  
 
