@@ -56,10 +56,10 @@ The menu displays different operations based on the context:
 | Context Scenario    | Available Actions                          |
 |---------------------|--------------------------------------------|
 | Plain Page          | Refresh Page, Back to Home                  |
-| Selected Text       | Copy Text, Search with Google              |
-| Links               | Open Link, Copy Link, Open in Incognito     |
-| Images              | Open Image, Copy Image URL, Save Image     |
-| Input Fields        | Paste, Undo, Redo                          |  
+| Selected Text       | Copy Text            |
+| Links               | Open Link, Copy Link    |
+| Images              | Open Image, Copy Image URL    |
+| Input Fields        | Paste                          |  
 
 
 ### Development Guide
@@ -144,7 +144,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 | 选中文本           | 复制文本、谷歌搜索                       |
 | 链接               | 打开链接、复制链接、无痕模式打开         |
 | 图片               | 打开图片、复制图片URL、保存图片          |
-| 输入框             | 粘贴、撤销、重做                         |  
+| 输入框             | 粘贴                         |  
 
 
 ### 开发指南
